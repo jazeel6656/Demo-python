@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% block body %}
+ <style>
+        input[type=text],input[type=password]{width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  background-color: #33FFCA;
+  color: white;
+        }
+    input[type=submit]{
+     background-color: #04AA6D;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+    }
+ </style>
+<form action="login" method="post">
+    {% csrf_token %}
+    <input type="text" name="username" placeholder="'username">
+    <input type="password" name="password" placeholder="password">
+    <input type="submit">
+</form>
+<a href="{% url 'register' %}" class="btn btn-primary">Register</a><br>
+{% for msg in messages %}
+{{msg}}
+{% endfor %}
+{% endblock %}

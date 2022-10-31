@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block body %}
+      <!-- about section start --> 
+      <div class="about_section layout_padding">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-8 col-sm-12">
+                  <div class="about_img"><img src="{% static 'images/about-img.png' %}"></div>
+                  <div class="like_icon"><img src="{% static 'images/like-icon.png' %}"></div>
+                  <p class="post_text">Post By : 09/06/2019</p>
+                  <h2 class="most_text">Retail Banking</h2>
+                  <p class="lorem_text">HDFC Bank offers a diverse range of financial products and banking services to customers through a growing branch and ATM network and digital channels such as Netbanking, Phonebanking and MobileBanking</p>
+                  <div class="social_icon_main">
+                     <div class="social_icon">
+                        <ul>
+                           <li><a href="#"><img src="{% static 'images/fb-icon.png' %}"></a></li>
+                           <li><a href="#"><img src="{% static 'images/twitter-icon.png' %}"></a></li>
+                           <li><a href="#"><img src="{% static 'images/instagram-icon.png' %}"></a></li>
+                        </ul>
+                     </div>
+                     <div class="read_bt"><a href="#">Read More</a></div>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-sm-12">
+                  <div class="image_5"><img src="{% static 'images/img-5.png' %}"></div>
+                  <h1 class="about_taital">About Us</h1>
+                  <p class="about_text">HDFC Bank is one of India’s leading private banks and was among the first to receive approval from the Reserve Bank of India (RBI) to set up a private sector bank in 1994.<br>
+                     Today, HDFC Bank has a banking network of 6,499 branches and 18,868 ATM's in 3,226 cities/towns.</p>
+                  <div class="read_bt_1"><a href="#">Read More</a></div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- about section end --> 
+{% endblock %}
